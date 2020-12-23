@@ -5,7 +5,7 @@ class CalculatorTest {
         //given
         //(1+2)+4
         val calculator = Calculator()
-        val expr = Sum(Sum(Num(1), Num(2)), Num(4))
+        val expr = Expr.Sum(Expr.Sum(Expr.Num(1), Expr.Num(2)), Expr.Num(4))
 
         //when
         var result = calculator.eval(expr)
