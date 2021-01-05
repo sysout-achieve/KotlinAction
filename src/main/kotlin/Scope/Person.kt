@@ -15,5 +15,9 @@ class Person {
         this.age = age
     }
 
+    override fun toString(): String = "name: $name, age: $age "
+    override fun equals(other: Any?): Boolean {
+        return this.equals(other.toString())
+    }
 
 }
